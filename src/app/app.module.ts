@@ -5,11 +5,13 @@ import { AppComponent } from './app.component';
 
 import { UserModule } from './user/user.module';
 import { NavComponent } from './nav/nav.component';
+import { ModalComponent } from './services/modal/modal.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavComponent
+    NavComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,
