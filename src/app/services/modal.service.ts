@@ -5,12 +5,16 @@ import { IModal } from 'src/models/modal.interface';
   providedIn: 'root'
 })
 export class ModalService {
-  private modals = Array<IModal>();
+  public modals = Array<IModal>();
 
   constructor() { }
 
   register(id: string) {
     this.modals = [...this.modals, {id, visible: false}];
+  }
+
+  unregister(id: string) {
+    this.modals = this.modals.filter((element) => element.id !== id);
   }
 
   isModalOpen(id: string): boolean {
