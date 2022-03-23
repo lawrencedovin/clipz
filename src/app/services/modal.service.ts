@@ -5,7 +5,7 @@ import { IModal } from 'src/models/modal.interface';
   providedIn: 'root'
 })
 export class ModalService {
-  public modals = Array<IModal>();
+  private modals = Array<IModal>();
 
   constructor() { }
 
