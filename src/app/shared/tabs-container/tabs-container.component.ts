@@ -1,4 +1,4 @@
-import { Component, AfterContentInit, ContentChildren, QueryList } from '@angular/core';
+import { Component, AfterContentInit, ContentChildren, QueryList, Input } from '@angular/core';
 import { TabComponent } from '../tab/tab.component';
 
 @Component({
@@ -13,6 +13,7 @@ export class TabsContainerComponent implements AfterContentInit {
   constructor() { }
 
   ngAfterContentInit(): void {
+    // this.tabs.
     console.log(this.tabs);
   }
 
