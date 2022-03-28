@@ -32,4 +32,10 @@ export class TabsContainerComponent implements AfterContentInit {
     // Passed in tab will be active
     tab.active = true;
   }
+
+  tabActiveStyles(tab: TabComponent): string {
+    if(tab.active) return 'hover:text-white text white bg-indigo-400';
+    else if (!tab.active) return 'hover:text-indigo-400';
+    else return '';
+  }
 }
